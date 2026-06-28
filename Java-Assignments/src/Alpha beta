@@ -1,0 +1,33 @@
+// Parent class
+class Alpha {
+    void showAlpha() {
+        System.out.println("This is Alpha class.");
+    }
+}
+
+// Child class
+class Beta extends Alpha {
+    void showBeta() {
+        System.out.println("This is Beta class.");
+    }
+}
+
+public class CastingExample {
+    public static void main(String[] args) {
+
+        // -------------------------
+        // Upcasting
+        // -------------------------
+        Alpha obj1 = new Beta();   // Upcasting
+        obj1.showAlpha();
+
+        // obj1.showBeta(); // Error: Alpha reference cannot access Beta methods
+
+        // -------------------------
+        // Downcasting
+        // -------------------------
+        Beta obj2 = (Beta) obj1;   // Downcasting
+        obj2.showAlpha();
+        obj2.showBeta();
+    }
+}
