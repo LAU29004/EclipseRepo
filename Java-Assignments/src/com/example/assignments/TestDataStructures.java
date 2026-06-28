@@ -1,3 +1,4 @@
+package com.example.assignments;
 import com.LinkedList.*;
 
 public class TestDataStructures {
